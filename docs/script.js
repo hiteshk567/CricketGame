@@ -76,13 +76,13 @@ var Game = /** @class */ (function () {
         var time = 1;
         var interval = setInterval(function () {
             timer.innerHTML = (time++).toString();
-            if (time === 11) {
+            if (time === 31) {
                 (currentRow = 1), (currentCol = 1);
                 hit1.setAttribute("disabled", "true");
                 hit2.removeAttribute("disabled");
                 _this.currentPlayingTeam = _this.teams[1];
             }
-            else if (time === 21) {
+            else if (time === 61) {
                 hit1.setAttribute("disabled", "true");
                 hit2.setAttribute("disabled", "true");
                 generate.removeAttribute("disabled");
